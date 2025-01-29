@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raman Kumar - About Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #ff4e50, #fc913a);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .about-me {
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 80%;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2.5s ease-in-out;
+    }
+    .about-me h2 {
+      font-size: 2rem;
+      color: #ff4e50;
+      margin-bottom: 1rem;
+    }
+    .about-me p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+    .timeline-container {
+      width: 80%;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      position: relative;
+    }
+    .timeline-container::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #ff4e50;
+      z-index: -1;
+    }
+    .timeline-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .timeline-item:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+    .timeline-item-content {
+      width: 45%;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1.5s ease-in-out;
+    }
+    .timeline-item-content h3 {
+      font-size: 1.5rem;
+      color: #ff4e50;
+    }
+    .timeline-item-content p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #555;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      background: #ff4e50;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      z-index: 1;
+      transform: translateY(-50%);
+    }
+    .timeline-item:nth-child(odd)::before {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .timeline-item:nth-child(even)::before {
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      color: #fff;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Raman Kumar</h1>
+    <p>Freelancer | Tech Enthusiast | Aspiring Programmer</p>
+  </header>
+
+  <!-- About Me Section -->
+  <div class="about-me">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Raman Kumar, currently pursuing B.Tech at SRM University (2024-2028). 
+      A passionate freelancer with a keen interest in technology, I’ve already monetized my skills, earning 
+      over <strong>30,000 INR</strong>. 
+      I aspire to become a skilled coder and am currently learning programming languages like 
+      <strong>C, C++, and Python</strong> to enhance my technical expertise. 
+      When I’m not coding or freelancing, you’ll find me exploring the latest trends in tech and innovation!
+    </p>
+  </div>
+
+  <!-- Timeline Section -->
+  <div class="timeline-container">
+    <div class="timeline-item">
+      <div class="timeline-item-content">
+        <h3>2024 - 2028</h3>
+        <p>Pursuing B.Tech at SRM University, exploring technology and innovation.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-item-content">
+        <h3>2015 - 2023</h3>
+        <p>Completed schooling at Montessori Elite School, building a solid academic foundation.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Raman Kumar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
